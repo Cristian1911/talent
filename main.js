@@ -26,7 +26,7 @@ function index(){
     jobs[i].title = jobElements[i].children[0].children[0].innerHTML;
     jobs[i].location = jobElements[i].children[0].children[1].innerHTML;
     url = jobElements[i].children[1].children[0].href;
-    res = url.replace(/127.0.0.1:5500/g, "www.iceenterprise.com"); //Replaces the localhost url with the real one
+    res = url.replace(/cristian1911.github.io/g, "www.iceenterprise.com"); //Replaces the localhost url with the real one
     jobs[i].url = res;
   }
 
