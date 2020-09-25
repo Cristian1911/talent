@@ -49,7 +49,6 @@ function loadDoc() {
   xhttp.send();
 }
 
-
 /*This function renders every row of the list*/ 
 function listJobs(jobList){
   var tableBody = document.getElementById("tableBody");
