@@ -1,0 +1,16 @@
+var jobElements = document.getElementsByClassName("job-search-results-container")[0].children;
+var job = {
+  title: "",
+  location: "",
+  url: ""
+};
+var jobs = [];
+
+for(i=0; i<jobElements.length; i++){
+  jobs[i] = Object.create(job);
+  jobs[i].title = jobElements[i].children[0].children[0].innerHTML;
+  jobs[i].location = jobElements[i].children[0].children[1].innerHTML;
+  jobs[i].url = jobElements[i].children[1].children[0].href;
+}
+
+console.log(jobs);
